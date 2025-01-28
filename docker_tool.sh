@@ -28,7 +28,8 @@ fi
 # GIT仓库初始化
 if [ "${1}" == "-git_repo_init" ]; then
 git init
-git add *
+git pull ${2}
+git add .
 git commit -m "first commit"
 git branch -M master
 git remote add origin ${2}
