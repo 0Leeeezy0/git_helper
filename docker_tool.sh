@@ -22,6 +22,7 @@ if [ "${1}" == "-git_init" ]; then
 git config --global user.name ${2}
 git config --global user.email ${3}
 ssh-keygen -t rsa -C ${3}
+cat ~/.ssh/id_rsa.pub
 fi
 
 # GIT仓库初始化
